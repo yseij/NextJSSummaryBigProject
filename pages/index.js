@@ -21,10 +21,12 @@ const DUMMY_MEETUPS = [
 ];
 
 function HomePage() {
-  useState();
-  useEffect(() => {}, []);
+  const [loadedMeetups, setLoadedMeetups] = useState([]);
+  useEffect(() => {
+    setLoadedMeetups(DUMMY_MEETUPS);
+  }, []);
 
-  return <MeetupList meetups={DUMMY_MEETUPS} />;
+  return <MeetupList meetups={loadedMeetups} />;
 }
 
 export default HomePage;
