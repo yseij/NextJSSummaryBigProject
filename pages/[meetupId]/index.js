@@ -1,4 +1,4 @@
-import Head from "next/Head";
+import Head from "next/head";
 import MeetupDetail from "../../components/meetups/MeetupDetail";
 import { MongoClient, ObjectId } from "mongodb";
 import { Fragment } from "react/cjs/react.production.min";
